@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Chore</title>
+</head>
+<body>
+    <h1>Add Chore</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add</button>
+    </form>
+    <a href="{% url 'chore_list' %}">Back to Chore List</a>
+</body>
+</html>

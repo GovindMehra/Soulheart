@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chore List</title>
+</head>
+<body>
+    <h1>Your Chores</h1>
+    <ul>
+        {% for chore in chores %}
+            <li>
+                {{ chore.title }} - {% if chore.is_completed %}Completed{% else %}Pending{% endif %}
+                {% if not chore.is_completed %}
+                    <a href="{% url 'complete_chore' chore.id %}">Complete</a>
+                {% endif %}
+                <a href="{% url 'delete_chore' chore.id %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_chore' %}">Add Chore</a>
+</body>
+</html>
