@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #f5d93a;
+            color: red;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            margin-left: 20px;
+        }
+        header h1 {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #D5B60A;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: red;
+            color: black;
+        }
+        .container {
+            padding: 500px;
+            background-color: #FF3131;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="SOULHEART-removebg-preview.png" id="header-image" width="150" height="150" alt="SoulHeart Logo">
+        <h1>Welcome to SoulHeart</h1><br>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">My Chores</a>
+        <a href="#services">My Account</a>
+        <a href="#contact">My Rewards</a>
+    </nav>
+    <div class="container">
+        <h2>Home Page</h2>
+        <p>This is the home page of our website. Here you can find information about our services, our team, and how to contact us.</p>
+    </div>
+</body>
+</html>
